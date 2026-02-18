@@ -1,0 +1,64 @@
+
+
+
+<!--TODO Add paralax and pop up effect on buttons.Add it as an improvement to the website
+ Make sure that you make images run fast
+ Ask Mr. Lier about JS dropdown code
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Links style to this page and sets descriptions, keyword and viewport.  -->
+        <!-- Title sets what the viewer sees as the tab name -->
+        <title> DGT Course Outlines</title>
+        <!-- Links this page to the style sheet -->
+        <link href="style.css" rel = "stylesheet">
+        <!-- links the java script -->
+        <script src = "scripts.js" defer></script>
+
+        <meta charset = "UTF-8">
+        <meta name = "description" content = "This is a website that has the course outlines for L1, L2 and L3 DGT For students at kingswayschool">
+        <meta name = "viewport" content = " width=device-width, initial-scale=1.0">
+        <meta name = "keywords" content = "DGT, Course Outlines, Kingsway School">
+        
+
+
+            
+    </head>  
+
+
+    <body>
+        <!-- Nav Bar where all the links to other pages are -->
+        <nav> 
+            <!-- Container that holds the whole navbar -->
+            <div class = "nav_bar">
+                <!-- Right ~50% of nav bar that holds that logo and "Kingsway Shool" Text. -->
+                <div class = "nav_logo_div">
+                    <a class = "logo_link_img_a" href = "index.html"><img alt = "Kingsway School Logo" src="Images/Kingsway-School-Logo.svg" class = "logo_link_img"></a>
+                    <a class = "nav_bar_text" href = "index.html">KingsWay School</a>
+                </div>
+                <!-- Left ~50% of navbar what holds the dropdown menu -->
+                <div class = "nav_link_div">
+                    <!-- dropdown menu-->
+                    <div class="dropdown" data-dropdown>
+                        <!-- dropdown menu button (when clicked the dropdown menu will open)-->
+                        <button class = "nav_bar_text" id = "dropdown_toggle_button" data-dropdown-button> Course Outline <img alt = "Drop down arrow" src="Images/drop_down_arrow.svg" class = "drop_down_arrow"></button>
+                        <!-- drop down menu content -->
+                        <div class="dropdown_menu">
+                            <a href = "DGT_Course_outline_L1.html" class = "nav_bar_text drop_down_text">DGT L1</a>
+                            <a href = "DGT_Course_outline_L2.html" class = "nav_bar_text drop_down_text">DGT L2</a>
+                            <a href = "DGT_Course_outline_L3.html" class = "nav_bar_text drop_down_text">DGT L3</a>
+                        </div>
+                    </div>
+                </div>
+        </nav>       
+        <!-- <h1>hello</h1> -->
+    </body>
+    
+
+</html>
+
+
+
+
