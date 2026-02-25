@@ -1,8 +1,12 @@
-/* Styles whole page margin 0px */
+  /* Styles whole page margin 0px */
 *{
   padding:0px;
   margin:0px;
 }
+
+/* ============== */
+/* Nav bar Styles */
+/* ============== */
 
 /* Styles nav buttons */
 button{
@@ -51,7 +55,7 @@ nav {
 .nav_bar_text{
   font-family: "Myriad Pro",sans-serif;
   font-weight: 700;
-  font-size:xx-large;
+  font-size:30px;
   color:white;
   text-decoration:none;
   cursor: pointer;
@@ -60,7 +64,7 @@ nav {
 
 /* Styles additional attributes dropdown text */
 .drop_down_text{
-  padding-right: 140px;
+  padding-right: 210px;
   display: block;
 }
 
@@ -80,6 +84,7 @@ nav {
 /* styles height of navbar image in navbar */
 .logo_link_img{
   height: 65px;
+  margin-top: 5px;
 }
 
 /* Sets the dropdowns position to relative*/
@@ -109,10 +114,101 @@ nav {
   box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 1);
   
 }
- 
-/* makes the h1 work with z-index */
+
+
+
+
+/* ========================== */
+/* Title and Title background */
+/* ========================== */
+
+.title{
+  height: 100vh;
+  width:100%;
+  background: 
+    
+    url("Images/IMG_1069.JPG");
+  background-size:cover;
+  background-position: center;
+  display:flex;
+  justify-content: start;
+  align-items: center;
+}
+
+
+
 h1 {
-  position: relative; 
+  /* makes the h1 work with z-index */
+  position: relative;
+  font-size: 4.5em;
+  margin-left:50px;
+  color:white;
+  font-family: "Myriad Pro",sans-serif;
+  
+}
+
+.behind_text{
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 500px;
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: start;
+  align-items: center;
+  /* border-radius: 20px; */
+  /* margin:20px; */
+}
+
+.text_width_restrainer{
+  width:850px;
+}
+
+
+/* =========================== */
+/* Introduction to the website */
+/* =========================== */
+
+
+.introduction{
+  display:flex;
+  width:100%;
+  background-color: #D3D3D3;
+  height: 600px;
+}
+
+.welcome_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  width:30%;
+
+}
+
+.explaination_div{
+  width:70%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+p{
+  margin:20px;
+  font-size: 1.8em;
+  color:#00205C;
+  font-family: "Myriad Pro",sans-serif;
+}
+
+h2{
+  position: relative;
+  font-size: 4em;
+  margin-left:20px;
+  color:white;
+  font-family: "Myriad Pro",sans-serif;
+  color:#00205C;
 }
 
 
@@ -120,8 +216,34 @@ h1 {
 
 
 
+.white_filler{
+  width:100%;
+  height: 500px;
+}
+
+
+
+@media all and (max-width:1024px){
+
+  .introduction{
+    flex-wrap:wrap;
+
+  }
+
+  .explaination_div{
+    width:100%;
+    background-color: blue;
+  }
+
+  .welcome_div{
+    width:100%;
+    justify-content: start;
+    background-color: red;
+  }
+}
+
 /* when the screen become less them 670px some styles will change */
-@media all and (max-width:700px){
+@media all and (max-width:850px){
 
 
   /* changes the width of both sides of the navbar to 100% and make then go ontop of each other instead on beside each other also make them both go to the left instead of one to the left and one to the right */
@@ -139,8 +261,29 @@ h1 {
   /*  make the navbar wrap the 2 side of the navbar and doubles it height to fit them*/
   .nav_bar{
     flex-wrap:wrap;
-    height: 140px;
+    height: 141px;
   }
 }
 
 
+@media all and (max-width:850px){
+
+
+  /* changes the width of both sides of the navbar to 100% and make then go ontop of each other instead on beside each other also make them both go to the left instead of one to the left and one to the right */
+  .nav_logo_div{
+    width:100%;
+    justify-content: start;
+  }
+
+  .nav_link_div{
+    width:100%;
+    justify-content: start;
+    margin-left: 5px;
+  }
+
+  /*  make the navbar wrap the 2 side of the navbar and doubles it height to fit them*/
+  .nav_bar{
+    flex-wrap: wrap;
+    height: 141px;
+  }
+}
