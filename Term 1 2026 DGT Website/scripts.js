@@ -25,3 +25,14 @@ document.addEventListener('click', e =>{
     })
 
 })
+
+
+
+
+// Parallax
+
+const parallax = document.getElementById("paralax_title");
+
+window.addEventListener("scroll" , function(){
+    let offset = this.window.pageYOffset;
+    parallax.style.backgroundPositionY = offset * 0.7 + "px"})
