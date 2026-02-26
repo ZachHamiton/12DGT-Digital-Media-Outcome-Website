@@ -27,14 +27,16 @@ nav {
   background-color: hsl(219, 100%, 18%);
   border-bottom:5px solid #FFD403;
   width:100%;
-  height: 70px;
+  /* height: 70px; */
   display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   
 }
 
 /* Styles left side of the navbar */
 .nav_logo_div{
-  width:55%;
+  /* width:55%; */
   display:flex;
   align-items: center;
   justify-content: start;
@@ -43,7 +45,7 @@ nav {
 
 /* Styles right side of navbar */
 .nav_link_div{
-  width:45%;
+  /* width:45%; */
 
   display: flex;
   align-items:center;
@@ -339,55 +341,5 @@ h4.body_link_text{
   .welcome_div{
     width:100%;
     justify-content: start;
-  }
-}
-
-/* when the screen become less them 670px some styles will change */
-@media all and (max-width:850px){
-
-
-  /* changes the width of both sides of the navbar to 100% and make then go ontop of each other instead on beside each other also make them both go to the left instead of one to the left and one to the right */
-  .nav_logo_div{
-    width:100%;
-    justify-content: start;
-  }
-
-  .nav_link_div{
-    width:100%;
-    justify-content: start;
-    margin-left: 5px;
-  }
-
-  /*  make the navbar wrap the 2 side of the navbar and doubles it height to fit them*/
-  .nav_bar{
-    flex-wrap:wrap;
-    height: 141px;
-  }
-}
-
-
-@media all and (max-width:850px){
-
-  button{
-    margin-right:0px;
-  }
-
-
-  /* changes the width of both sides of the navbar to 100% and make then go ontop of each other instead on beside each other also make them both go to the left instead of one to the left and one to the right */
-  .nav_logo_div{
-    width:100%;
-    justify-content: start;
-  }
-
-  .nav_link_div{
-    width:100%;
-    justify-content: start;
-    margin-left: 5px;
-  }
-
-  /*  make the navbar wrap the 2 side of the navbar and doubles it height to fit them*/
-  .nav_bar{
-    flex-wrap: wrap;
-    height: 141px;
   }
 }
