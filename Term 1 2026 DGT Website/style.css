@@ -204,7 +204,7 @@ h1 {
 }
 
 
-p{
+.main_page_body_text{
   margin:20px;
   font-size: 1.8em;
   color:#00205C;
@@ -323,7 +323,80 @@ h4.body_link_text{
   width:100%;
 }
 
+/* ====== */
+/* Footer */
+/* ====== */
 
+
+.footer_div{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color:#00205C;
+}
+
+.footer_info_div{
+  margin-left: 50px;
+  padding-top:50px;
+  padding-bottom:50px;
+  
+}
+
+
+.footer_link_div{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right:50px;
+  margin-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+h5.footer_text{
+  color:#FFD403;
+  font-size:20px;
+  margin:5px;
+   font-family:"Avenir Next", sans-serif ;
+}
+
+p.footer_text{
+  color:white;
+  font-size:16px;
+  font-family:"Avenir Next", sans-serif ;
+  margin:5px;
+}
+
+
+.footer_link_content{
+  height:50px;
+  width:50px;
+  border-radius: 25px;
+  background-color: white;
+  margin:5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_link_content:hover{
+  background-color: #FFD403;
+}
+
+.footer_link_img{
+  height:25px;
+}
+
+.footer_link_img_large{
+  height:38px;
+}
+
+.footer_link_img_small{
+  height:20px;
+}
+ 
 @media all and (max-width:1024px){
 
   .introduction{
