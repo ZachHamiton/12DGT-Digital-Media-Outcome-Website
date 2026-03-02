@@ -31,8 +31,13 @@ document.addEventListener('click', e =>{
 
 // Parallax
 
+
+// gets the paralax_titile id and stores it in a variable
 const parallax = document.getElementById("paralax_title");
 
+
+// everytime you scroll the function is run
 window.addEventListener("scroll" , function(){
+    // gets offset and times it by 0.7 so that it scrolls slower then the rest of the page. 
     let offset = this.window.pageYOffset;
     parallax.style.backgroundPositionY = offset * 0.7 + "px"})
