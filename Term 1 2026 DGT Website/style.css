@@ -6,6 +6,10 @@
   margin:0px;
 }
 
+html, body { 
+  overflow-x: hidden; 
+}
+
 /* ======= */
 /* Nav bar */
 /* ======= */
@@ -19,11 +23,14 @@ margin-right:20px;
 
 
 
+
 /* Puts nav bar on top of everything else */
 nav {
   position: relative;
   z-index: 10; 
+  
 }
+
 
 /* Styles main div of the nav bar*/
 /* makes the dropdown go to the right and the logo to the left */
@@ -140,6 +147,8 @@ nav {
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center 0px;
+  background-attachment: fixed;
+  will-change: background-position;
 }
 
 /* makes the title take up the whole vertical hieght of the screen no matter the size of it */
@@ -155,8 +164,7 @@ nav {
 /* sets the size color and font of h1s */
 h1 {
   font-size: 4.5em;
-  margin-left:50px;
-  color:white;
+  color:white;  
   font-family: "Myriad Pro",sans-serif;
   
 }
@@ -175,7 +183,9 @@ h1 {
 
 /* makes to so that the text in the title does not get larger then 850px */
 .text_width_restrainer{
-  width:850px;
+  max-width:850px;
+  margin:0px 50px;
+  
 }
 
 
@@ -258,12 +268,11 @@ h2{
 /* makes the transition ease instead of instant */
 .body_link_img_div{ 
   height: 500px;
-  width: 450px;
   border-radius: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 /* makes the images larger when you hover */
-.body_link_img_div:hover{
+.body_link_img_div:hover{ 
   transform: scale(1.05);
   box-shadow: 0 15px 30px rgba(0,0,0,0.15)
 }
@@ -290,6 +299,7 @@ h2{
     url("Images/students_helping_each_other.webp");
   background-size:cover;
   background-position: center;
+  width: 450px;
 }
 
 #year_12_body_link{
@@ -297,6 +307,7 @@ h2{
     url("Images/teach_helping_student.webp");
   background-size:cover;
   background-position: center;
+  width: 450px;
 
 }
 
@@ -306,6 +317,7 @@ h2{
     url("Images/student_in_blazer_working.webp");
   background-size:cover;
   background-position: center;
+  width: 450px;
 }
 
 /* sets the outline for the main links */
@@ -319,6 +331,7 @@ h2{
 .body_link_text{
   color:white;
   font-family: "Myriad Pro",sans-serif;
+  padding: 0px 30px; 
 }
 
 
@@ -392,15 +405,24 @@ p.footer_text{
 }
 
 /* styles how the links in the footer look.*/
+.footer_link{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; 
+  height: 50px;
+  margin: 5px;
+  border-radius: 50%; /* make anchor itself circular */
+  overflow: hidden;      /* clip clickable area to circle */
+  background-color: white; /* white background moved here */
+}
 .footer_link_content{
-  height:50px;
-  width:50px;
-  border-radius: 25px;
-  background-color: white;
-  margin:5px;
+  /* removed fixed size and margin to let parent anchor control dimensions */
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 /* when you hover over the link in the footer they turn a differant  */
@@ -453,4 +475,48 @@ p.footer_text{
     width:100%;
     justify-content: start;
   }
+}
+
+@media (max-width: 480px) {
+    .body_link_img_div { width: 100%; }
+
+
+
+    .body_link_div {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .footer_info_div {
+      margin: 0% 10% 0% 10%;
+    }
+    #year_11_body_link {
+      width: 100%;
+    }
+
+    #year_12_body_link {
+      width: 100%;
+    }
+
+    #year_13_body_link {
+      width: 100%;
+    }
+
+
+    h1 {
+      font-size: 60px;
+    }
+    
+}
+
+
+@media (max-width: 400px){
+  .footer_div{
+    justify-content: center;
+  }
+
+  .behind_text{
+    justify-content: center;
+  }
+
+
 }
