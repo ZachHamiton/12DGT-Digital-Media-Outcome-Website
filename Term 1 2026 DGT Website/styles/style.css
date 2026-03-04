@@ -1,0 +1,536 @@
+  /* ================= */
+  /* Sets global defult */
+  /* ================= */
+*{
+  padding:0px;
+  margin:0px;
+}
+
+html, body { 
+  overflow-x: hidden; 
+}
+
+/* ======= */
+/* Nav bar */
+/* ======= */
+
+/* Styles nav buttons */
+button{
+background-color:#00205C ;
+border:none;
+margin-right:20px;
+}
+
+
+
+
+/* Puts nav bar on top of everything else */
+nav {
+  position: relative;
+  z-index: 10; 
+  
+}
+
+
+/* Styles main div of the nav bar*/
+/* makes the dropdown go to the right and the logo to the left */
+.nav_bar{
+  background-color: hsl(219, 100%, 18%);
+  border-bottom:5px solid #FFD403;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+
+
+/* verticaly center left side of nav bar*/
+.nav_logo_div{
+  display:flex;
+  align-items: center;
+}
+
+
+/* verticaly center right side of nav bar*/
+.nav_link_div{
+  display: flex;
+  align-items:center;
+}
+
+
+/* Styles text in nav bar */
+.nav_bar_text{
+  font-family: "Myriad Pro",sans-serif;
+  font-weight: 700;
+  font-size:30px;
+  color:white;
+  text-decoration:none;
+  cursor: pointer;
+  padding: 15px;
+}
+
+
+/* Styles additional attributes dropdown text */
+.drop_down_text{
+  padding-right: 210px;
+  display: block;
+}
+
+
+/* when dropdown text is hovered over it changes color */
+.drop_down_text:hover{
+  background-color: #1a366d;
+  border-radius: 10px;
+}
+
+/* Styles the image in the nav bar*/
+/* make curser a pointer */
+.logo_link_img_a{
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+
+/* styles height of navbar image in navbar */
+.logo_link_img{
+  height: 65px;
+  margin-top: 5px;
+}
+
+/* Sets the dropdown's position to relative*/
+.dropdown{
+  position: relative;
+}
+
+/* styles the dropdown menu  */
+/* however makes it invisable.  */
+/* sytles how it will apear when unhidden*/  
+.dropdown_menu{
+  position:absolute;
+  background-color: #00205C;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-210px);
+  transition: transform 150ms ease-in-out, opacity 150ms ease-in-out;
+  margin-top:5px;
+  z-index: -1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; 
+}
+
+/* when dropdown gets the active class it will apear and slide in */
+.dropdown.active .dropdown_menu{
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events:auto;
+  box-shadow: 5px 5px 10px -3px rgba(0, 0, 0, 1);
+  
+}
+
+
+
+
+/* ========================== */
+/* Title and Title background */
+/* ========================== */
+
+
+
+
+/* sets the background image and behavours so that paralax scrolling will work */
+.new_title_background{
+  background: 
+      url("../images/whole_dgt_class.jpg");
+
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+  background-attachment: fixed;
+  will-change: background-position;
+}
+
+/* makes the title take up the whole vertical hieght of the screen no matter the size of it */
+.title{
+  height: 100vh;
+  width:100%;
+  display:flex;
+  justify-content: start;
+  align-items: center;
+}
+
+
+/* sets the size color and font of h1s */
+h1 {
+  font-size: 4.5em;
+  color:white;  
+  font-family: "Myriad Pro",sans-serif;
+  
+}
+
+/* sets a 50% transpearant black layer behind text so that it is readable */
+.behind_text{
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  width: 100%;  
+  height: 100%;
+  display:flex;
+  justify-content: start;
+  align-items: center;
+}
+
+
+/* makes to so that the text in the title does not get larger then 850px */
+.text_width_restrainer{
+  max-width:900px;
+  margin:0px 50px;
+  
+}
+
+
+/* =========================== */
+/* Introduction to the website */
+/* =========================== */
+
+
+/* sets the size and colour of the introduction */
+.introduction{
+  display:flex;
+  width:100%;
+  background-color: #D3D3D3;
+  height: 600px;
+}
+
+/* centers the "welcome" and makes it only take 30% of the screen */
+.welcome_div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+  width:30%;
+
+}
+
+
+/* centers the explaination and sets width to 70%*/
+.explaination_div{
+  width:70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* sets how the paragraph text looks in the home page */
+.main_page_body_text{
+  margin:20px;
+  font-size: 30px;
+  color:#00205C;
+  font-family: "Myriad Pro",sans-serif;
+}
+
+
+/* sets h2 text colour size and font. */
+.welcome_text{
+  font-size: 4em;
+  margin-left:20px;
+  color:white;
+  font-family: "Myriad Pro",sans-serif;
+  color:#00205C;
+}
+
+
+
+/* =============== */
+/* Main page links */
+/* =============== */
+
+
+/*  */
+.body_link_div{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  
+  padding-top:200px;
+  padding-bottom:200px;
+
+
+}
+
+
+
+/* sets the size of body_links */
+/* makes the transition ease instead of instant */
+.body_link_img_div{ 
+  height: 500px;
+  border-radius: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* makes the images larger when you hover */
+.body_link_img_div:hover{ 
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15)
+}
+
+/* goes behind the text so that you can read it easily */
+/* formates the text so that it in columns */
+
+.body_link_color_div{
+  background: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  width:100%;
+  height:100%;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+/* sets background image for differant buttons */
+#year_11_body_link{
+  background: 
+    url("../images/students_helping_each_other.webp");
+  background-size:cover;
+  background-position: center;
+  width: 450px;
+}
+
+#year_12_body_link{
+  background: 
+    url("../images/teach_helping_student.webp");
+  background-size:cover;
+  background-position: center;
+  width: 450px;
+
+}
+
+
+#year_13_body_link{
+  background: 
+    url("../images/student_in_blazer_working.webp");
+  background-size:cover;
+  background-position: center;
+  width: 450px;
+}
+
+/* sets the outline for the main links */
+.body_link{
+  border-radius: 30px;
+  text-decoration: none;
+  margin:10px;
+}
+
+/* sets the text in body links */
+.body_link_text{
+  color:white;
+  font-family: "Myriad Pro",sans-serif;
+  padding: 0px 30px; 
+}
+
+
+/* sets the size of texts in body link */
+h3.body_link_text{
+  font-size: 50px;
+}
+
+h4.body_link_text{
+  font-size: 30px;
+}
+
+h5.body_link_text{
+  margin-top:30px;
+}
+
+
+/* ====== */
+/* Footer */
+/* ====== */
+
+
+
+/* sets so that the footer displays the info on the left and the links on the right */
+/* makes  */
+.footer_div{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color:#00205C;
+}
+
+
+/* make there be room inbetween the top and bottom of the footer and the left side of the page */
+.footer_info_div{
+  margin-left: 50px;
+  padding-top:50px;
+  padding-bottom:50px;
+  
+}
+
+
+/* centers and puts space between the links in the footer*/
+.footer_link_div{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right:50px;
+  margin-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+
+
+/* syltes the heading text in the footer */
+h5.footer_text{
+  color:#FFD403;
+  font-size:20px;
+  margin:5px;
+   font-family:"Avenir Next", sans-serif ;
+}
+
+/* sytles the p text in the footer */
+p.footer_text{
+  color:white;
+  font-size:16px;
+  font-family:"Avenir Next", sans-serif ;
+  margin:5px;
+}
+
+/* styles how the links in the footer look.*/
+.footer_link{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; 
+  height: 50px;
+  margin: 5px;
+  border-radius: 50%; /* make anchor itself circular */
+  overflow: hidden;      /* clip clickable area to circle */
+  background-color: white; /* white background moved here */
+}
+.footer_link_content{
+  /* removed fixed size and margin to let parent anchor control dimensions */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* when you hover over the link in the footer they turn a differant  */
+.footer_link_content:hover{
+  background-color: #FFD403;
+}
+
+/* sets the high of normal images in the foter links */
+.footer_link_img{
+  height:25px;
+  overflow: hidden;
+}
+
+/* some images have a banner that says sports they needed to be given a differant high to make the banner go onto the edge of theh cirle */
+.footer_link_img_large{
+  height:38px;
+  overflow: hidden;
+}
+
+/* the youtube logo looked weird when its height was 25px so i made it 20px instead */
+.footer_link_img_small{
+  height:20px;
+  overflow: hidden;
+}
+
+
+
+ /* when the screen become less then 1024px in width this makes the introduction change from having "welcome" on the left and text on the right to having text on the top and text underneth */
+@media all and (max-width:1024px){
+
+  /* makes the divs in the introduction go underneth each other and sets the height to 450px*/
+  .introduction{
+    flex-wrap:wrap;
+    height: 450px;
+
+
+    /* Not needed 90% of the time however fail safe if the screen in really small (I edknowledge that scroll boxs are not ideal) */
+    overflow: scroll;
+
+  }
+
+
+  /* sets the width of the explaination so that it takes up the whole screen and sets the content to the start instead of the center */
+  /* by making the width 100% it forces them to wrap underneth each other */
+  .explaination_div{
+    width:100%;
+    justify-content: start;
+    align-items: start;
+  }
+
+
+  /* also sets width to the whole page and set the content to the start instead of the center */
+  .welcome_div{
+    width:100%;
+    justify-content: start;
+  }
+}
+
+@media (max-width: 480px) {
+    .body_link_img_div { width: 100%; }
+
+
+
+    .body_link_div {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .footer_info_div {
+      margin: 0% 10% 0% 10%;
+    }
+    #year_11_body_link {
+      width: 100%;
+    }
+
+    #year_12_body_link {
+      width: 100%;
+    }
+
+    #year_13_body_link {
+      width: 100%;
+    }
+
+
+    h1 {
+      font-size: 60px;
+    }
+
+    .main_page_body_text{
+      font-size: 20px;
+    }
+    
+}
+
+
+@media (max-width: 400px){
+  .footer_div{
+    justify-content: center;
+  }
+
+  .behind_text{
+    justify-content: center;
+  }
+
+  .welcome_div{
+    justify-content: center;
+  }
+
+  .welcome_text{
+    margin: 0px;
+  }
+}
