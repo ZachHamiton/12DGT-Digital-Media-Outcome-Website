@@ -153,7 +153,7 @@ nav {
 
 /* makes the title take up the whole vertical hieght of the screen no matter the size of it */
 .title{
-  height: 100vh;
+  height: 85vh;
   width:100%;
   display:flex;
   justify-content: start;
@@ -199,7 +199,7 @@ h1 {
   display:flex;
   width:100%;
   background-color: #D3D3D3;
-  height: 600px;
+  height: 500px;
 }
 
 /* centers the "welcome" and makes it only take 30% of the screen */
@@ -404,6 +404,7 @@ p.footer_text{
   margin:5px;
 }
 
+
 /* styles how the links in the footer look.*/
 .footer_link{
   display: inline-flex;
@@ -450,7 +451,32 @@ p.footer_text{
 
 
 
- /* when the screen become less then 1024px in width this makes the introduction change from having "welcome" on the left and text on the right to having text on the top and text underneth */
+/* year 11 page */
+.year_11_page_info_div{
+  color:#00205C;
+  background-color:#D3D3D3;
+  padding:50px;
+}
+
+.year_11_page_info_div div{
+  margin:50px 0px;
+}
+
+
+.year_11_page_info_div h2{
+  font-size: 30px;
+}
+
+.year_11_page_info_div h3{
+  font-size: 30px;
+}
+
+
+
+
+
+
+/* when the screen become less then 1024px in width this makes the introduction change from having "welcome" on the left and text on the right to having text on the top and text underneth */
 @media all and (max-width:1024px){
 
   /* makes the divs in the introduction go underneth each other and sets the height to 450px*/
@@ -529,6 +555,7 @@ p.footer_text{
   .welcome_div{
     justify-content: center;
   }
+
 
   .welcome_text{
     margin: 0px;
