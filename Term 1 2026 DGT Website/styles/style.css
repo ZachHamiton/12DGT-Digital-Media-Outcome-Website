@@ -294,9 +294,10 @@ h1 {
 }
 
 /* sets background image for differant buttons */
+/* makes them cover which makes them fill the whole box with as much of the image visiable as posiable */
 #year_11_body_link{
   background: 
-    url("../images/students_helping_each_other.webp");
+    url("../images/students_helping_each_other.jpg");
   background-size:cover;
   background-position: center;
   width: 450px;
@@ -304,7 +305,7 @@ h1 {
 
 #year_12_body_link{
   background: 
-    url("../images/teach_helping_student.webp");
+    url("../images/teacher_helping_student.jpg");
   background-size:cover;
   background-position: center;
   width: 450px;
@@ -314,7 +315,7 @@ h1 {
 
 #year_13_body_link{
   background: 
-    url("../images/student_in_blazer_working.webp");
+    url("../images/student_in_blazer_working.jpg");
   background-size:cover;
   background-position: center;
   width: 450px;
@@ -378,12 +379,10 @@ h5.body_link_text{
 /* centers and puts space between the links in the footer*/
 .footer_link_div{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: end;
-  margin-right:50px;
-  margin-left: 50px;
-  padding-bottom: 50px;
-  padding-top: 50px;
+  padding:50px;
 }
 
 
@@ -450,25 +449,60 @@ p.footer_text{
 }
 
 
+/* ============================== */
+/* Other pages coures online info */
+/* ============================== */
 
-/* year 11 page */
-.year_11_page_info_div{
+/* sets all info in coures outline for 3 pages */
+.page_info_div{
   color:#00205C;
-  background-color:#D3D3D3;
   padding:50px;
+  font-family: "Myriad Pro", sans-serif;
 }
 
-.year_11_page_info_div div{
-  margin:50px 0px;
+/* give the padding, margin and text height to make the elements in page_info_div readable and sectioned*/
+.page_info_div div{
+  margin:100px 0px;
+}
+
+.page_info_div h2{
+  font-size: 35px;
+  padding:10px;
+}
+
+.page_info_div h3{
+  font-size: 35px;
+  padding:10px;
+}
+
+.page_info_div p{
+  font-size: 35px;
+  padding:10px;
+}
+
+.page_info_div h3{
+  font-size: 35px;
+  padding:10px;
 }
 
 
-.year_11_page_info_div h2{
-  font-size: 30px;
+.page_info_div p{
+  font-size: 25px;
 }
 
-.year_11_page_info_div h3{
-  font-size: 30px;
+.page_info_div li{
+  font-size: 25px;
+
+}
+
+.page_info_div ul{
+  padding-left:35px;
+}
+
+
+/* makes important parts bold */
+.bold{
+  font-weight: bold;
 }
 
 
@@ -508,7 +542,9 @@ p.footer_text{
 }
 
 @media (max-width: 480px) {
-    .body_link_img_div { width: 100%; }
+    .body_link_img_div {
+      width: 100%;
+    }
 
 
 
@@ -516,9 +552,16 @@ p.footer_text{
       padding-top: 50px;
       padding-bottom: 50px;
     }
+
+    /* makes margin 10% instead of 50px on the left and 0 on te right */
+    /* this is done so there is padding on both sides and so that the padding looks more natureal*/
     .footer_info_div {
       margin: 0% 10% 0% 10%;
     }
+
+
+    /* makes the pichture the size of the text in the link instead of 450px */
+    /* this is done so that he pichture doesn't overflow off the screen */
     #year_11_body_link {
       width: 100%;
     }
@@ -531,11 +574,13 @@ p.footer_text{
       width: 100%;
     }
 
-
+    /* changes the size of the h1 text so that the text doesn't overflow too soon */
     h1 {
       font-size: 60px;
     }
 
+
+    /* change the size of the text in the introduction so that it doesn't become a scroll box before it needs to */
     .main_page_body_text{
       font-size: 20px;
     }
@@ -544,6 +589,8 @@ p.footer_text{
 
 
 @media (max-width: 400px){
+
+  /* centers them so that both sides overflow at the same time. also makes them overflow later */
   .footer_div{
     justify-content: center;
   }
@@ -556,7 +603,7 @@ p.footer_text{
     justify-content: center;
   }
 
-
+  /* makes the margin 0 so that it centers properly */
   .welcome_text{
     margin: 0px;
   }

@@ -29,7 +29,7 @@ document.addEventListener('click', e =>{
 
 
 
-// Parallax
+// //Parallax
 
 
 // // gets the paralax_titile id and stores it in a variable
