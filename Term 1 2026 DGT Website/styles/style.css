@@ -225,7 +225,7 @@ h1 {
 
 /* sets how the paragraph text looks in the home page */
 .main_page_body_text{
-  margin:20px;
+  margin:30px;
   font-size: 30px;
   color:#00205C;
   font-family: "Myriad Pro",sans-serif;
@@ -235,7 +235,7 @@ h1 {
 /* sets h2 text colour size and font. */
 .welcome_text{
   font-size: 4em;
-  margin-left:20px;
+  margin-left:30px;
   color:white;
   font-family: "Myriad Pro",sans-serif;
   color:#00205C;
@@ -462,7 +462,8 @@ p.footer_text{
 
 /* give the padding, margin and text height to make the elements in page_info_div readable and sectioned*/
 .page_info_div div{
-  margin:100px 0px;
+  padding:100px 0px;
+  border-bottom: 2px solid #00205C;
 }
 
 .page_info_div h2{
@@ -500,11 +501,39 @@ p.footer_text{
 }
 
 
+
 /* makes important parts bold */
 .bold{
   font-weight: bold;
 }
 
+.margin{
+  margin: 50px;
+}
+
+.download_div{
+  width:100%;
+  border: 2px solid #00205C;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Myriad Pro", sans-serif;
+}
+
+.download_text{
+  padding: 30px;
+  font-size: 25px;
+}
+
+.download_link{
+  margin: 10px;
+  padding:20px;
+  text-decoration: none;
+  background-color: #00205C;
+  border-radius: 10px;
+  color:white;
+}
 
 
 
@@ -540,6 +569,32 @@ p.footer_text{
     justify-content: start;
   }
 }
+
+@media (max-width: 520px) {
+  /* centers everything is that button div* and puts the button under the text/
+
+  /* resizing the text so that it isn't so large when the screen in small */
+  .download_text{
+    font-size: 20px;
+    text-align: center;
+    padding:15px;
+      
+  }
+
+  .download_div{
+    flex-wrap: wrap;
+    justify-self: center;
+    align-items: center;
+  }
+
+  .download_link{
+    width:90%;
+    text-align: center;
+
+  }
+
+}
+
 
 @media (max-width: 480px) {
     .body_link_img_div {
@@ -584,6 +639,9 @@ p.footer_text{
     .main_page_body_text{
       font-size: 20px;
     }
+
+
+   
     
 }
 
