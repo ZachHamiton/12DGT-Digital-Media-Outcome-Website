@@ -41,7 +41,6 @@ nav {
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
 
 
@@ -536,6 +535,13 @@ p.footer_text{
 }
 
 
+.standards_offered{
+  width:800px;
+}
+
+
+
+
 
 
 
@@ -569,6 +575,14 @@ p.footer_text{
     justify-content: start;
   }
 }
+
+@media all and (max-width:900px){
+  .standards_offered{
+    width: 100%
+  }
+}
+
+
 
 @media (max-width: 520px) {
   /* centers everything is that button div* and puts the button under the text/
