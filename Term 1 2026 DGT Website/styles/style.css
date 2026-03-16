@@ -61,7 +61,7 @@ nav {
 
 /* Styles text in nav bar */
 .nav_bar_text{
-  font-family: "Myriad Pro",sans-serif;
+  font-family:sans-serif;
   font-weight: 700;
   font-size:30px;
   color:white;
@@ -164,7 +164,7 @@ nav {
 h1 {
   font-size: 4.5em;
   color:white;  
-  font-family: "Myriad Pro",sans-serif;
+  font-family:sans-serif;
   
 }
 
@@ -227,7 +227,7 @@ h1 {
   margin:30px;
   font-size: 30px;
   color:#00205C;
-  font-family: "Myriad Pro",sans-serif;
+  font-family:sans-serif;
 }
 
 
@@ -236,7 +236,7 @@ h1 {
   font-size: 4em;
   margin-left:30px;
   color:white;
-  font-family: "Myriad Pro",sans-serif;
+  font-family:sans-serif;
   color:#00205C;
 }
 
@@ -247,14 +247,13 @@ h1 {
 /* =============== */
 
 
-/*  */
+/* spaces the buttons properly */
 .body_link_div{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   row-gap: 50px;
-  
   padding-top:200px;
   padding-bottom:200px;
 
@@ -330,7 +329,7 @@ h1 {
 /* sets the text in body links */
 .body_link_text{
   color:white;
-  font-family: "Myriad Pro",sans-serif;
+  font-family:sans-serif;
   padding: 0px 30px; 
 }
 
@@ -455,7 +454,7 @@ p.footer_text{
 /* sets all info in coures outline for 3 pages */
 .page_info_div{
   color:#00205C;
-  padding:50px;
+  padding:0px 50px 50px 50px;
   font-family: "Myriad Pro", sans-serif;
 }
 
@@ -615,7 +614,7 @@ p.footer_text{
       width: 100%;
     }
 
-
+   
 
     .body_link_div {
       padding-top: 50px;
@@ -653,7 +652,6 @@ p.footer_text{
     .main_page_body_text{
       font-size: 20px;
     }
-
 
    
     
