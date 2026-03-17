@@ -310,7 +310,6 @@ h1 {
 
 }
 
-
 #year_13_body_link{
   background: 
     url("../images/student_in_blazer_working.jpg");
@@ -318,6 +317,7 @@ h1 {
   background-position: center;
   width: 450px;
 }
+
 
 /* sets the outline for the main links */
 .body_link{
@@ -390,14 +390,14 @@ h5.footer_text{
   color:#FFD403;
   font-size:20px;
   margin:5px;
-   font-family:"Avenir Next", sans-serif ;
+   font-family:sans-serif ;
 }
 
 /* sytles the p text in the footer */
 p.footer_text{
   color:white;
   font-size:16px;
-  font-family:"Avenir Next", sans-serif ;
+  font-family: sans-serif ;
   margin:5px;
 }
 
@@ -455,7 +455,7 @@ p.footer_text{
 .page_info_div{
   color:#00205C;
   padding:0px 50px 50px 50px;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: sans-serif;
 }
 
 /* give the padding, margin and text height to make the elements in page_info_div readable and sectioned*/
@@ -504,11 +504,17 @@ p.footer_text{
 .bold{
   font-weight: bold;
 }
+/* =============== */
+/* download button */
+/* =============== */
 
-.margin{
+
+/* Restrics the download div so that it doesn't touch the side */
+.download_div_margin{
   margin: 50px;
 }
 
+/* sets the area where the download div goes and sets where the elements inside it go*/
 .download_div{
   width:100%;
   border: 2px solid #00205C;
@@ -516,14 +522,17 @@ p.footer_text{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Myriad Pro", sans-serif;
+  font-family: sans-serif;
 }
 
+/* set the side of the text and makes it more readable by giving it padding */
 .download_text{
   padding: 30px;
   font-size: 25px;
 }
 
+
+/* styles the actual  button that you click to download the pdf */
 .download_link{
   margin: 10px;
   padding:20px;
@@ -533,7 +542,8 @@ p.footer_text{
   color:white;
 }
 
-
+/* sets the width of the image that show a table of the differant standartds offered */
+/* makes it so that it doesn't get to large */
 .standards_offered{
   width:800px;
 }
@@ -576,9 +586,16 @@ p.footer_text{
 }
 
 @media all and (max-width:900px){
+  /* this preveously had a width of 800px */
+  /* under 900px there will be no more room for it so i set it to 100% so that it can take up the maxiumu space that it can */
   .standards_offered{
     width: 100%
   }
+ .body_link_div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
 }
 
 
@@ -594,32 +611,33 @@ p.footer_text{
       
   }
 
+  /* makes the download div content go under each other instead of beside each other*/
   .download_div{
     flex-wrap: wrap;
     justify-self: center;
     align-items: center;
   }
 
+  /* makes the download button take up the whole botton of the div */
   .download_link{
     width:90%;
     text-align: center;
 
   }
 
+ 
+
 }
 
 
 @media (max-width: 480px) {
+
+    /* sets the size of the image to 100% instead of 450px for larger screens */
     .body_link_img_div {
       width: 100%;
     }
 
-   
-
-    .body_link_div {
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
+  
 
     /* makes margin 10% instead of 50px on the left and 0 on te right */
     /* this is done so there is padding on both sides and so that the padding looks more natureal*/
