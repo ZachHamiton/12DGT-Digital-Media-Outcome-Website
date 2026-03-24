@@ -1,5 +1,5 @@
   /* ================= */
-  /* Sets global defult */
+  /* Sets global default */
   /* ================= */
 *{
   padding:0px;
@@ -92,7 +92,7 @@ nav {
 }
 
 /* Styles the image in the nav bar*/
-/* make curser a pointer */
+/* make cursor a pointer */
 .logo_link_img_a{
   margin-left: 20px;
   cursor: pointer;
@@ -111,8 +111,8 @@ nav {
 }
 
 /* styles the dropdown menu  */
-/* however makes it invisable.  */
-/* sytles how it will apear when unhidden*/  
+/* however makes it invisible.  */
+/* styles how it will appear when unhidden*/  
 .dropdown_menu{
   position:absolute;
   background-color: #00205C;
@@ -126,7 +126,7 @@ nav {
   border-bottom-right-radius: 10px; 
 }
 
-/* when dropdown gets the active class it will apear and slide in */
+/* when dropdown gets the active class it will appear and slide in */
 .dropdown.active .dropdown_menu{
   opacity: 1;
   transform: translateY(0px);
@@ -145,7 +145,7 @@ nav {
 
 
 
-/* sets the background image and behavours so that paralax scrolling will work */
+/* sets the background image and behaviors so that parallax scrolling will work */
 .new_title_background{
   background: 
       url("../images/whole_dgt_class.jpg");
@@ -157,7 +157,7 @@ nav {
   will-change: background-position;
 }
 
-/* makes the title take up the whole vertical hieght of the screen no matter the size of it */
+/* makes the title take up the whole vertical height of the screen no matter the size of it */
 .title{
   height: 85vh;
   width:100%;
@@ -175,7 +175,7 @@ h1 {
   
 }
 
-/* sets a 50% transpearant black layer behind text so that it is readable */
+/* sets a 50% transparent black layer behind text so that it is readable */
 .behind_text{
   background: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -187,7 +187,7 @@ h1 {
 }
 
 
-/* makes to so that the text in the title does not get larger then 850px */
+/* makes it so that the text in the title does not get larger than 850px */
 .text_width_restrainer{
   max-width:900px;
   margin:0px 50px;
@@ -217,8 +217,8 @@ h1 {
  
 
 
-/* centers the explaination and sets width to 70%*/
-.explaination_div{
+/* centers the explanation and sets width to 70%*/
+.explanation_div{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -280,7 +280,7 @@ h1 {
 }
 
 /* goes behind the text so that you can read it easily */
-/* formates the text so that it in columns */
+/* formats the text so that it in columns */
 
 .body_link_color_div{
   background: 
@@ -295,8 +295,8 @@ h1 {
   gap: 7px;
 }
 
-/* sets background image for differant buttons */
-/* makes them cover which makes them fill the whole box with as much of the image visiable as posiable */
+/* sets background image for different buttons */
+/* makes them cover which makes them fill the whole box with as much of the image visible as possible */
 #year_11_body_link{
   background: 
     url("../images/students_helping_each_other.jpg");
@@ -394,7 +394,7 @@ h1 {
 
 
 
-/* syltes the heading text in the footer */
+/* styles the heading text in the footer */
 h3.footer_text{
   color:#FFD403;
   font-size:20px;
@@ -402,7 +402,7 @@ h3.footer_text{
    font-family:sans-serif ;
 }
 
-/* sytles the p text in the footer */
+/* styles the p text in the footer */
 p.footer_text{
   color:white;
   font-size:16px;
@@ -432,24 +432,24 @@ p.footer_text{
   height: 100%;
 }
 
-/* when you hover over the link in the footer they turn a differant  */
+/* when you hover over the link in the footer they turn a different color */
 .footer_link_content:hover{
   background-color: #FFD403;
 }
 
-/* sets the high of normal images in the foter links */
+/* sets the height of normal images in the footer links */
 .footer_link_img{
   height:25px;
   overflow: hidden;
 }
 
-/* some images have a banner that says sports they needed to be given a differant high to make the banner go onto the edge of theh cirle */
+/* some images have a banner that says sports they needed to be given a different height to make the banner go onto the edge of the circle */
 .footer_link_img_large{
   height:38px;
   overflow: hidden;
 }
 
-/* the youtube logo looked weird when its height was 25px so i made it 20px instead */
+/* the YouTube logo looked weird when its height was 25px so I made it 20px instead */
 .footer_link_img_small{
   height:20px;
   overflow: hidden;
@@ -457,10 +457,10 @@ p.footer_text{
 
 
 /* ============================== */
-/* Other pages coures online info */
+/* Other pages course online info */
 /* ============================== */
 
-/* sets all info in coures outline for 3 pages */
+/* sets all info in course outline for 3 pages */
 .page_info_div{
   color:#00205C;
   padding:0px 50px 50px 50px;
@@ -518,7 +518,7 @@ p.footer_text{
 /* =============== */
 
 
-/* Restrics the download div so that it doesn't touch the side */
+/* Restricts the download div so that it doesn't touch the side */
 .download_div_margin{
   margin: 50px;
 }
@@ -534,7 +534,7 @@ p.footer_text{
   font-family: sans-serif;
 }
 
-/* set the side of the text and makes it more readable by giving it padding */
+/* set the size of the text and makes it more readable by giving it padding */
 .download_text{
   padding: 30px;
   font-size: 25px;
@@ -552,8 +552,8 @@ p.footer_text{
   color:white;
 }
 
-/* sets the width of the image that show a table of the differant standartds offered */
-/* makes it so that it doesn't get to large */
+/* sets the width of the image that show a table of the different standards offered */
+/* makes it so that it doesn't get too large */
 .standards_offered{
   width:800px;
 }
@@ -564,7 +564,7 @@ p.footer_text{
 
 
 
-/* when the screen become less then 1024px in width this makes the introduction change from having "welcome" on the left and text on the right to having text on the top and text underneth */
+/* when the screen becomes less than 1024px in width this makes the introduction change from having "welcome" on the left and text on the right to having text on the top and text underneath */
 @media all and (max-width:1200px){
   .introduction{
     display: block;
@@ -582,13 +582,13 @@ p.footer_text{
 }
 
 @media all and (max-width:900px){
-  /* this preveously had a width of 800px */
-  /* under 900px there will be no more room for it so i set it to 100% so that it can take up the maxiumu space that it can */
+  /* this previously had a width of 800px */
+  /* under 900px there will be no more room for it so I set it to 100% so that it can take up the maximum space that it can */
   .standards_offered{
     width: 100%
   }
 
-  /* redues the amount of padding around the body links */
+  /* reduces the amount of padding around the body links */
  .body_link_div {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -601,7 +601,7 @@ p.footer_text{
 @media (max-width: 520px) {
   /* centers everything is that button div* and puts the button under the text/
 
-  /* resizing the text so that it isn't so large when the screen in small */
+  /* resizing the text so that it isn't so large when the screen is small */
   .download_text{
     font-size: 20px;
     text-align: center;
@@ -616,7 +616,7 @@ p.footer_text{
     align-items: center;
   }
 
-  /* makes the download button take up the whole botton of the div */
+  /* makes the download button take up the whole bottom of the div */
   .download_link{
     width:90%;
     text-align: center;
@@ -639,15 +639,15 @@ p.footer_text{
 
   
 
-    /* makes margin 10% instead of 50px on the left and 0 on te right */
-    /* this is done so there is padding on both sides and so that the padding looks more natureal*/
+    /* makes margin 10% instead of 50px on the left and 0 on the right */
+    /* this is done so there is padding on both sides and so that the padding looks more natural*/
     .footer_info_div {
       margin: 0% 10% 0% 10%;
     }
 
 
-    /* makes the pichture the size of the text in the link instead of 450px */
-    /* this is done so that he pichture doesn't overflow off the screen */
+    /* makes the picture the size of the text in the link instead of 450px */
+    /* this is done so that the picture doesn't overflow off the screen */
     #year_11_body_link {
       width: 100%;
     }
@@ -681,7 +681,7 @@ p.footer_text{
   }
 
 
-  /* makes the welcome stay on screen for as long as possable */
+  /* makes the welcome stay on screen for as long as possible */
   .welcome_div{
     justify-content: center;
   }
